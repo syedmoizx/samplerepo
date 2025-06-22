@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y nginx
+
+  build:
+    commands:
+      - echo "Listing files to check for index.html"
+      - ls -la
+      - echo "Copying index.html to /var/www/html"
+      - cp index.html /var/www/html/index.html
+
+artifacts:
+  files:
+    - '**/*'
