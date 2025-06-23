@@ -9,7 +9,7 @@ phases:
       - echo "Listing files to check for index.html"
       - ls -la
       - echo "Copying index.html to /usr/share/nginx/html"
-      - cp index.html /usr/share/nginx/html/index.html
+      - cp index.html /var/www/html/index.html
 
 artifacts:
   files:
